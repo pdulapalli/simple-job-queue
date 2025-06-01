@@ -1,6 +1,10 @@
 [project]
-name = "simple-message-queue"
+name = "simple-job-queue"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11"
+dependencies = [
+    "python-dotenv>=1.1.0",
+    "redis[hiredis]>=6.2.0",
+]
