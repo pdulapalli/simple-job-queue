@@ -123,8 +123,8 @@ def main():
             print(f"\nCreated job with payload: {payload}")
             print(f"Queue now has {job_queue.get_job_count()} job(s) waiting.")
 
-            # Wait for 1 second before creating the next job
-            time.sleep(1)
+            # Wait for 5 seconds before creating the next job
+            time.sleep(5)
     except KeyboardInterrupt:
         print(f"\nProducer stopped. Created {created_count} job(s) in total.")
 
